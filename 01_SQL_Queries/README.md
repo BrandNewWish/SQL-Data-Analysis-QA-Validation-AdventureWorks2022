@@ -57,5 +57,3 @@ Write a join with customer data, product name, and region from Sales.Customer, P
 
 Exercise 20.
 Write a query that finds in Production.Product a row where the first word of the name starts with 'F' and has 4 letters and the second word starts with 'E'.
-FROM [AdventureWorks2019].[Production].[Product]
-where name like 'F___ E%'
