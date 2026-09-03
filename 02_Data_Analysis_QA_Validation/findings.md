@@ -180,5 +180,4 @@ The referential-integrity and business-rule checks performed in this project did
 
 The results demonstrate how SQL can be used to investigate data quality, validate relationships between database tables, and identify records requiring further investigation.
 
-A SQL query returning unexpected or missing data does not automatically indicate a software defect. The result should be evaluated against documented business rules and expected system behavior before assigning a defect classification.
-
+A SQL query returning unexpected or missing data does not automatically indicate a software defect. The result should be evaluated against documented business rules and expected system behavior.
