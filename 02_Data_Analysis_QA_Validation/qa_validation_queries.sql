@@ -77,6 +77,9 @@ LEFT JOIN Sales.Customer AS c
     ON soh.CustomerID = c.CustomerID
 WHERE c.CustomerID IS NULL;
 
+-- Result: 0 records found.
+-- PASS: No invalid customer references were identified.
+
 -- QA-07
 -- Objective: Identify products with a negative ListPrice
 
@@ -124,4 +127,7 @@ SELECT
     OrderDate
 FROM Sales.SalesOrderHeader
 WHERE OrderDate IS NULL;
+
+-- Result: 0 records found.
+-- PASS: No sales orders with missing OrderDate values were identified.
 
