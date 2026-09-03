@@ -1,3 +1,5 @@
+SQL Query Practice
+
 Exercise 1.
 In the TransactionHistory table, count products based on ProductID with more than 20 occurrences.
 
