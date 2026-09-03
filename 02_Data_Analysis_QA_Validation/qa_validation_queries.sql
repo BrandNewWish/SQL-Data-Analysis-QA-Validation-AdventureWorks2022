@@ -35,7 +35,7 @@ LEFT JOIN Person.Person AS p
 WHERE c.PersonID IS NOT NULL
   AND p.BusinessEntityID IS NULL;
 
- -- Result: 0 records found.
+-- Result: 0 records found.
 -- PASS: No customers with invalid PersonID references were identified.
 
 -- QA-04
@@ -48,6 +48,9 @@ FROM Sales.SalesOrderDetail AS sod
 LEFT JOIN Production.Product AS p
     ON sod.ProductID = p.ProductID
 WHERE p.ProductID IS NULL;
+
+-- Result: 0 records found.
+-- PASS: No orphaned product references were identified.
 
 -- QA-05
 -- Objective: Identify order details referencing sales orders that do not exist
